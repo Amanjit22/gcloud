@@ -19,7 +19,7 @@ resource "google_compute_instance" "default" {
     access_config {}
   }
 
-  metadata_startup_script = <<-EOF
+ metadata_startup_script = <<-EOF
   #!/bin/bash
   sudo apt-get update
   sudo apt-get install -y nginx
